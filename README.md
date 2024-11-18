@@ -36,16 +36,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.paradiso.nl/?gad_source=1&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwT4GlOkJLcNeoYj6wrk2OhdYOMk1ykzKWuAYkYjZ73-MUdZhonwIvMaAqYGEALw_wcB
+ https://www.flyhyer.com/
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home
-  <img src="readme-images/paradisohomepage.png" width="375px" alt="Home pagina van website van Paradiso ">
+  Home pagina
+  <img src="readme-images/hyperhome.png" width="375px" alt="Home pagina van website van Hyper ">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Over ons
-  <img src="readme-images/overonsparadiso.png" width="375px" alt="Over Ons pagina van Paradiso">
+  Over ons pagina
+  <img src="readme-images/hyperaboutus.png" width="375px" alt="Over Ons pagina van Hyper">
  
 </details>
 
@@ -58,6 +58,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+   <img src="readme-images/validatiehtmlhome.png" width="375px" alt="Validatie Html check resultaat voor Home pagina van Hyper">
+
+  1 error voor -> When the srcset attribute has any image candidate string with a width descriptor, the sizes attribute must also be specified. 
+   <img src="readme-images/validatiehtml-aboutus.png" width="375px" alt="Validatie Html check resultaat voor Over Ons pagina van Hyper">
+   1 error voor -> Element figcaption not allowed as child of element blockquote in this context. Suppressing further errors from this subtree.
+
+  - Geen header 
+  - Ze hebben alle headings, begon met H1
+  - Alt tekst duidelijk, worden gelezen door screenreader.
+
+   
+
 
 </details>
 
@@ -69,10 +81,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/hompageschets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/mainschets.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
