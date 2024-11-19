@@ -65,6 +65,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    1 error voor -> Element figcaption not allowed as child of element blockquote in this context. Suppressing further errors from this subtree.
 
   - Geen header 
+  - Geen darkmode
   - Ze hebben alle headings, begon met H1
   - Alt tekst duidelijk, worden gelezen door screenreader.
 
