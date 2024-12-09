@@ -110,7 +110,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student Ivy     | student Helina          | student Milo   
+  | student Ivy     | student Helina      | student Milo   
   | ---             | ---                     | --- 
    fontface, bottom  fontface, nav             a in ul, hidden h1 in section
   line, html 
@@ -143,19 +143,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | studentIvy            
+  | ---           
+  | tekst met  position relative 
+  | om op foto te  zetten 
+  | als ert tijd is
+   wil ik mijn font 
+  wanneer die online
+  is op github 
+  staat fixen.   
+  | als er meer tijd is wil ik light dark kunnen oplossen in mijn code die error geven.
+
+  
+  | student Helina          
+  | ---           
+  | form van footer,
+  | losje foto knippen ipv hele foto van icons
+  | als ert tijd is.
+  | als er meer tijd is wil ze light dark kunnen oplossen in haar code die error geven.
+
+  | student Milo          
+  | ---           
+  | Ziek
+  | 
+  | 
+  
+
+               
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Fontface op github
+  - Losje foto
+  - Lightdark color cheme
 - ...
 
 </details>
