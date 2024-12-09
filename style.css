@@ -2,13 +2,13 @@
 /* Stijls voor beide paginas */
 @font-face {
     font-family: 'Ivy'; 
-    src: url("../fonts/HelveticaNowDisplay.woff2") format("woff2");
+    src: url("fonts/HelveticaNowDisplay.woff2") format("woff2");
     font-weight: 400; 
 }
 
 @font-face {
     font-family: 'IvyBold';
-    src: url("../fonts/HelveticaNowDisplayBold.woff2") format("woff2");
+    src: url("fonts/HelveticaNowDisplayBold.woff2") format("woff2");
     font-weight: 700;
 }
 
