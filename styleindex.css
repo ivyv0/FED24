@@ -1,0 +1,1002 @@
+body {
+    font-family: 'Ivy';
+    color: var( --color-text);
+    margin: 0; 
+}
+
+
+/* laptop scherm */
+@media screen and (min-width: 969px) {
+    
+header img:last-of-type { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1000;
+    top: 0;
+}
+
+header {
+    display: flex;
+}
+
+.visually-hiddenlogo {
+    display: block;
+}
+
+
+nav img {
+    width: 4em;
+    padding-left: 2em;
+}
+
+/* main */
+main section:first-of-type article:nth-of-type(1)  a img {
+    width: 90%;
+    z-index: 1000;
+    order: 0;
+   
+}
+    
+  
+}
+
+main section:first-of-type article:nth-of-type(1)  a {
+   width: 90%;
+   position: relative;
+   
+   
+  
+}
+
+main section:nth-of-type(1) {
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1)  {
+   display: flex;
+  
+}
+
+main section:nth-of-type(1) article:nth-of-type(1) h2 {
+    margin-left: .7em;
+    font-size: 3em;
+    font-family: "IvyBold";
+    margin-top: 2em;
+    order: 1;
+    line-height: 0.9;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) h3 {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    margin-left: 1.5em;  
+    font-family: "IvyBold";
+}
+
+main section:nth-of-type(1) article:nth-of-type(2), article:nth-of-type(3) {
+    display: flex;
+}
+
+
+.button {
+    margin: 10px;
+    text-decoration: none;
+    padding: 9px 23px;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: "IvyBold";
+}
+
+#booking-options {
+    margin: 1.7em;
+}
+
+main .button:hover {
+    background-color: #1a242e;
+}
+
+
+main section:nth-of-type(2) li:nth-of-type(1) {
+    border-top: solid 1.1px black; 
+}
+
+
+main section:nth-of-type(6) ul img {
+ width: 100%;
+ height: 100%;
+}
+
+
+
+main section:nth-of-type(2) h2{
+    font-size: 1.8rem;
+    color: var(--color-text);
+    margin-left: 1.2em;  
+    margin-right: 1.2em;  
+    font-family: "IvyBold";
+    border-top: solid 1.2px darkgrey; 
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 2.2em;
+}
+
+main section:nth-of-type(2) li h3 {
+    font-family: "IvyBold";
+    font-size: 1.3rem;
+}
+main section:nth-of-type(2) li p {
+    font-family: "Ivy";
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 110%;
+   
+}
+
+main section:nth-of-type(2) li {
+    border-top: solid 1.1px black; 
+    margin-right: 1.2em;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* All solutions */
+main section:nth-of-type(3) {
+    background-color: var(--color-vak);
+    color: var(--color-text-vak);
+    
+}
+
+
+
+main > section:nth-of-type(3) h4 {
+    font-size: 2em;
+    padding: 0.9em;
+    display: flex;
+    margin-bottom: 1rem; 
+    line-height: 0.8; 
+}
+
+main > section:nth-of-type(3) p {
+    font-size: 1.1em;
+    padding-left: 1.6em;
+    font-family: "Ivy";
+    margin-top: 0;     
+    line-height: 0.8; 
+}
+
+
+main > section:nth-of-type(3) > button{
+    margin: 2em;
+    text-decoration: none;
+    padding: 8px 23px;
+    background-color: var(--color-vak);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: "Ivy";
+    border-color: white;
+
+}
+main section:nth-of-type(3) article {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    line-height: 0.9em;
+   
+}
+
+main section:nth-of-type(3) article > h5 {
+    font-size: 2em;
+    padding: 1em ;
+    font-family: "IvyBold";
+    position: relative; 
+    z-index: 1; 
+    top: 2em;
+    
+}
+
+main section:nth-of-type(3) article:first-of-type p {
+    font-size: 1.1em;
+    padding-left: 2em;
+    font-family: "Ivy";
+    z-index: 1; 
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+main section:nth-of-type(3) article:first-of-type img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    z-index: 0;
+}
+
+main section:nth-of-type(3) article:last-of-type img {
+    width: 100%; 
+    height: auto; 
+    top: 2em;
+    position: absolute; 
+    z-index: 0;
+}
+
+main section:nth-of-type(3) article:last-of-type p {
+    font-size: 1.1em;
+    padding-left: 2em;
+    font-family: "Ivy";
+    z-index: 1; 
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+/* flight manager */
+
+main > section:nth-of-type(4) img {
+    width: 50%;
+    order: -1; 
+    height: 10%;
+    transform: scale(1);
+    margin-left: 10em;
+    margin-top: 9em;
+}
+ 
+
+main > section:nth-of-type(4) h2{
+    margin: 0.9em;
+    font-family: "IvyBold";
+    font-size: 2em;
+}
+
+main > section:nth-of-type(4) p{
+    margin: 1.3em;
+    font-family: "Ivy";
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+
+main > section:nth-of-type(4) {
+    background-color: var(--color-vak);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    }
+
+main > section:nth-of-type(5) li > img {
+ width: 100%;
+ 
+}  
+
+/* foto cloud */
+main > section:nth-of-type(6) > img{
+ width: 100%;
+  
+}
+
+main > section:nth-of-type(6) {
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+   
+} 
+
+main > section:nth-of-type(6) > a {
+  
+    font-family: "IvyBold";
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 3em;
+    position: absolute;
+    /* inset: 0;  */
+    top: 0;
+    bottom: 0;
+    
+   
+   
+}
+
+main > section:nth-of-type(6) > a:hover {
+    text-decoration: underline;
+    transition: 1s;
+
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.5em;
+  
+}
+
+footer section:nth-of-type(3) {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap:1em; 
+   flex-wrap: wrap;
+    
+}
+
+footer section:nth-of-type(1) h2 > img {
+  width: 8em;
+  padding-top: 1rem;
+}
+
+footer section:nth-of-type(2) h3, h4 {
+    width: 8em;
+    padding-top: 1rem;
+    font-family: "IvyBold";
+}
+  
+footer section:nth-of-type(2) ul {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+footer section:nth-of-type(2) ul img {
+    width: 40%;
+    height: 90%;
+}
+
+footer section:nth-of-type(3) article {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    
+}
+
+footer section:nth-of-type(4) h5:first-of-type {
+    font-size: 1rem;
+    font-family: "Ivy";
+}
+
+footer section:nth-of-type(4) h5:last-of-type {
+    font-size: 0.8rem;
+    font-family: "Ivy";
+    order: -1;
+    color: grey;
+}
+
+footer section:nth-of-type(4) p {
+    font-size: 0.8rem;
+    font-family: "Ivy";
+    order: -1;
+    color: grey;
+}
+
+footer ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 0;
+    margin: 0; 
+    order: 1;
+    list-style: none;
+    font-size: 0.7em;
+}
+
+
+footer section:nth-of-type(4) ul{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+footer img {
+    width: 5em;
+    
+}
+
+ 
+footer li a {
+    text-decoration: none;
+    cursor: default;
+    color: grey;
+}
+
+/**********************/
+/* BASIS STYLES */
+/**********************/
+/*  scroll animatie */
+@keyframes adjust-image {
+    from {
+        zoom: 1;
+        translate: -50% -100% 0;
+        /* Dit is een experimentele eigenschap die de zoom van het element instelt. Dit wordt echter niet breed ondersteund en wordt vaak genegeerd.
+translate: -50% -100% 0;: Verplaatst het element:
+Horizontaal (-50%): Verschuift het 50% naar links van zijn positie.
+Verticaal (-100%): Verschuift het 100% omhoog van zijn positie.
+Diepte (0): Geen verandering in de Z-richting (voor 3D-transformatie).
+ */
+    }
+    70% {
+        transform: translate(50%, -100%) scale(1.5);
+        opacity: 0.10;
+        /* translate(20%, -100%): Verplaatst het element:
+Horizontaal (20%): Beweegt iets naar rechts.
+Verticaal (-100%): Blijft op dezelfde hoogte.
+scale(2.5): Vergroot het element tot 1,5 keer zijn originele grootte.
+opacity: 0.10: Maakt het bijna transparant (10% zichtbaarheid). */
+    }
+    to {
+        translate: -50% -60% 0;
+        scale: 3.5;
+        opacity: 0;
+    }
+}
+
+
+header > img { 
+    view-timeline: --header-vtl;
+}
+
+
+
+
+/* foto slide */
+main section:nth-of-type(5) {
+    overflow: hidden; /* Verberg inhoud buiten het zichtbare deel */
+    width: 100%;
+}
+
+main section:nth-of-type(5) ul {
+    display: flex; /* Zet de slides naast elkaar */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s ease; /* Smooth overgang bij sliden */
+}
+
+main section:nth-of-type(5) li {
+    min-width: 100%; /* Elke slide neemt 100% van de breedte in */
+}
+
+main section:nth-of-type(5) li img {
+    width: 100%;
+    height: auto;
+}
+
+main section:nth-of-type(5) > button {
+    top: 50%;
+    transform: translateX(1500%);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0.9em;
+    z-index: 10000;
+    background: none;
+}
+
+
+#prev {
+    left: 10em;
+}
+
+#next {
+    right: 10em;
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media (max-width: 969px) {
+
+.visually-hiddenlogo {
+    display: none;
+}
+
+header > img { 
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: -1;
+    left: 0;
+    z-index: -1; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+header h1 img {
+    position: absolute;
+    top: 0.2em;
+    left: 0.6em;
+    width: 2.2em;
+    height: 2.2em;
+}
+
+nav img {
+    width: 4em;
+    padding-left: 2em;
+}
+
+/* main */
+
+main section:nth-of-type(1) {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8em;
+}
+
+main section:nth-of-type(1) h2 {
+    margin-left: .7em;
+    font-size: 2.9em;
+    font-family: "IvyBold";
+    margin-top: 1.3em;
+}
+
+main section:nth-of-type(1) p {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    margin-left: 1.5em;  
+    font-family: "IvyBold";
+   
+}
+
+
+.button {
+    margin: 10px;
+    text-decoration: none;
+    padding: 9px 23px;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: "IvyBold";
+}
+
+#booking-options {
+    margin: 1.7em;
+}
+
+main .button:hover {
+    background-color: #1a242e;
+}
+
+
+main section:nth-of-type(2) li:nth-of-type(1) {
+    border-top: solid 1.1px black; 
+}
+
+
+main section:nth-of-type(6) ul img {
+ width: 100%;
+ height: 100%;
+}
+
+
+
+main section:nth-of-type(2) h2{
+    font-size: 1.8rem;
+    color: var(--color-text);
+    margin-left: 1.2em;  
+    margin-right: 1.2em;  
+    font-family: "IvyBold";
+    border-top: solid 1.2px darkgrey; 
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 2.2em;
+}
+
+main section:nth-of-type(2) li h3 {
+    font-family: "IvyBold";
+    font-size: 1.3rem;
+}
+main section:nth-of-type(2) li p {
+    font-family: "Ivy";
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 110%;
+   
+}
+
+main section:nth-of-type(2) li {
+    border-top: solid 1.1px black; 
+    margin-right: 1.2em;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* All solutions */
+main section:nth-of-type(3) {
+    background-color: var(--color-vak);
+    color: var(--color-text-vak);
+    
+}
+
+
+
+main > section:nth-of-type(3) h4 {
+    font-size: 2em;
+    padding: 0.9em;
+    display: flex;
+    margin-bottom: 1rem; 
+    line-height: 0.8; 
+}
+
+main > section:nth-of-type(3) p {
+    font-size: 1.1em;
+    padding-left: 1.6em;
+    font-family: "Ivy";
+    margin-top: 0;     
+    line-height: 0.8; 
+}
+
+
+main > section:nth-of-type(3) > button{
+    margin: 2em;
+    text-decoration: none;
+    padding: 8px 23px;
+    background-color: var(--color-vak);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: "Ivy";
+    border-color: white;
+
+}
+main section:nth-of-type(3) article {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    line-height: 0.9em;
+   
+}
+
+main section:nth-of-type(3) article > h5 {
+    font-size: 2em;
+    padding: 1em ;
+    font-family: "IvyBold";
+    position: relative; 
+    z-index: 1; 
+    top: 2em;
+    
+}
+
+main section:nth-of-type(3) article:first-of-type p {
+    font-size: 1.1em;
+    padding-left: 2em;
+    font-family: "Ivy";
+    z-index: 1; 
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+main section:nth-of-type(3) article:first-of-type img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    z-index: 0;
+}
+
+main section:nth-of-type(3) article:last-of-type img {
+    width: 100%; 
+    height: auto; 
+    top: 2em;
+    position: absolute; 
+    z-index: 0;
+}
+
+main section:nth-of-type(3) article:last-of-type p {
+    font-size: 1.1em;
+    padding-left: 2em;
+    font-family: "Ivy";
+    z-index: 1; 
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+/* flight manager */
+
+main > section:nth-of-type(4) img {
+    width: 50%;
+    order: -1; 
+    height: 10%;
+    transform: scale(1);
+    margin-left: 10em;
+    margin-top: 9em;
+}
+ 
+
+main > section:nth-of-type(4) h2{
+    margin: 0.9em;
+    font-family: "IvyBold";
+    font-size: 2em;
+}
+
+main > section:nth-of-type(4) p{
+    margin: 1.3em;
+    font-family: "Ivy";
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+
+main > section:nth-of-type(4) {
+    background-color: var(--color-vak);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    }
+
+main > section:nth-of-type(5) li > img {
+ width: 100%;
+ 
+}  
+
+/* foto cloud */
+main > section:nth-of-type(6) > img{
+ width: 100%;
+  
+}
+
+main > section:nth-of-type(6) {
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+   
+} 
+
+main > section:nth-of-type(6) > a {
+  
+    font-family: "IvyBold";
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 3em;
+    position: absolute;
+    /* inset: 0;  */
+    top: 0;
+    bottom: 0;
+    
+   
+   
+}
+
+main > section:nth-of-type(6) > a:hover {
+    text-decoration: underline;
+    transition: 1s;
+
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.5em;
+  
+}
+
+footer section:nth-of-type(3) {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap:1em; 
+   flex-wrap: wrap;
+    
+}
+
+footer section:nth-of-type(1) h2 > img {
+  width: 8em;
+  padding-top: 1rem;
+}
+
+footer section:nth-of-type(2) h3, h4 {
+    width: 8em;
+    padding-top: 1rem;
+    font-family: "IvyBold";
+}
+  
+footer section:nth-of-type(2) ul {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+footer section:nth-of-type(2) ul img {
+    width: 40%;
+    height: 90%;
+}
+
+footer section:nth-of-type(3) article {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    
+}
+
+footer section:nth-of-type(4) h5:first-of-type {
+    font-size: 1rem;
+    font-family: "Ivy";
+}
+
+footer section:nth-of-type(4) h5:last-of-type {
+    font-size: 0.8rem;
+    font-family: "Ivy";
+    order: -1;
+    color: grey;
+}
+
+footer section:nth-of-type(4) p {
+    font-size: 0.8rem;
+    font-family: "Ivy";
+    order: -1;
+    color: grey;
+}
+
+footer ul {
+    display: column;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 0;
+    margin: 0; 
+    order: 1;
+    list-style: none;
+    font-size: 0.7em;
+}
+
+
+footer section:nth-of-type(4) ul{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+footer img {
+    width: 5em;
+    
+}
+
+ 
+footer li a {
+    text-decoration: none;
+    cursor: default;
+    color: grey;
+}
+
+/**********************/
+/* BASIS STYLES */
+/**********************/
+/*  scroll animatie */
+@keyframes adjust-image {
+    from {
+        zoom: 1;
+        translate: -50% -100% 0;
+        /* Dit is een experimentele eigenschap die de zoom van het element instelt. Dit wordt echter niet breed ondersteund en wordt vaak genegeerd.
+translate: -50% -100% 0;: Verplaatst het element:
+Horizontaal (-50%): Verschuift het 50% naar links van zijn positie.
+Verticaal (-100%): Verschuift het 100% omhoog van zijn positie.
+Diepte (0): Geen verandering in de Z-richting (voor 3D-transformatie).
+ */
+    }
+    70% {
+        transform: translate(50%, -100%) scale(1.5);
+        opacity: 0.10;
+        /* translate(20%, -100%): Verplaatst het element:
+Horizontaal (20%): Beweegt iets naar rechts.
+Verticaal (-100%): Blijft op dezelfde hoogte.
+scale(2.5): Vergroot het element tot 1,5 keer zijn originele grootte.
+opacity: 0.10: Maakt het bijna transparant (10% zichtbaarheid). */
+    }
+    to {
+        translate: -50% -60% 0;
+        scale: 3.5;
+        opacity: 0;
+    }
+}
+
+
+header > img { 
+    view-timeline: --header-vtl;
+}
+header > img {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    animation: adjust-image linear both;
+    animation-timeline: --header-vtl;
+    animation-range: exit;
+    z-index: -1;
+    height: 60%;
+}
+header h1 {
+    padding-top: min(20rem, 60vw);
+}
+
+
+
+/* foto slide */
+main section:nth-of-type(5) {
+    overflow: hidden; /* Verberg inhoud buiten het zichtbare deel */
+    width: 100%;
+}
+
+main section:nth-of-type(5) ul {
+    display: flex; /* Zet de slides naast elkaar */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s ease; /* Smooth overgang bij sliden */
+}
+
+main section:nth-of-type(5) li {
+    min-width: 100%; /* Elke slide neemt 100% van de breedte in */
+}
+
+main section:nth-of-type(5) li img {
+    width: 100%;
+    height: auto;
+}
+
+main section:nth-of-type(5) > button {
+    top: 50%;
+    transform: translateX(1500%);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0.9em;
+    z-index: 10000;
+    background: none;
+}
+
+
+#prev {
+    left: 10em;
+}
+
+#next {
+    right: 10em;
+}
+
+}

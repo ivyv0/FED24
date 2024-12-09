@@ -1,0 +1,148 @@
+
+/* Stijls voor beide paginas */
+@font-face {
+    font-family: 'Ivy'; 
+    src: url("../fonts/Helvetica\ Now\ Display.woff2") format("woff2");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'IvyBold';
+    src: url("../fonts/Helvetica\ Now\ Display\ Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+* ::selection {
+    background-color: rgba(0, 0, 0, 0.729); 
+    color: white; 
+}
+
+:root {
+    color-scheme: light dark;
+   --color-text: light dark (white, black); 
+   --color-background: light dark (white, black); 
+   --line-color: light dark (grey, black);
+   --line-color: light dark (rgba(0, 0, 0, 0.2), white);
+   --color-vak:  #151623; 
+   --color-text-vak: white; 
+   --selection-color: light dark (black, white);
+   
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        transition: tra;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: end;
+
+}
+
+
+/**********************/
+/* NAVIGATION STYLES */
+/**********************/
+@media screen and (min-width: 969px) {
+nav {
+    position: relative;
+}
+
+/* Hamburger Button */
+nav .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+nav .menu-toggle img {
+   width: 8.5%;
+   z-index: 1000000;
+   position: absolute;
+} 
+nav > img {
+    width: 100%;
+    z-index: 1000001;
+    position: absolute;
+}
+/**********************/
+/* SLIDE MENU STYLES */
+/**********************/
+nav ul li h2 {
+    visibility: hidden;
+   
+}
+
+nav ul li a {
+    visibility: hidden;
+} 
+
+nav ul li:nth-of-type(1) h2::after {
+    visibility: visible;
+    content: "Solution";
+    font-family: "Ivy";
+}
+
+nav ul li:nth-of-type(2) h2::after {
+    visibility: visible;
+    content: "About us";
+}
+
+nav ul li:nth-of-type(3) h2::after {
+    visibility: visible;
+    content: "Contact";
+}
+
+nav ul li:nth-of-type(1) h2::after:hover {
+   text-decoration: underline;
+}
+
+nav ul li:nth-of-type(2) h2::after {
+    visibility: visible;
+    content: "About us";
+}
+
+nav ul li:nth-of-type(3) h2::after {
+    visibility: visible;
+    content: "Contact";
+}
+
+nav ul {
+    position: relative; /* Laat de ul zich positioneren binnen nav */
+    display: flex; /* Gebruik flexbox voor de items */
+    z-index: 1000; /* Zorg dat de ul boven andere elementen staat */
+    justify-content: flex-end; /* Plaatst de lijst naar rechts */
+    margin: 0; /* Verwijder standaard marges */
+    padding: 0; /* Verwijder standaard padding */
+}    
+
+/* Menu zichtbaar maken */
+nav.toonMenu ul {
+    transform: translateX(0);
+}
+
+nav.toonMenu button img {
+   content: url(../icons/x-icon.svg); 
+   z-index: 20000;
+   
+}
+
+
+}
+/**********************/
+/* MEDIA QUERY (GROTE SCHERMEN) */
+/**********************/
