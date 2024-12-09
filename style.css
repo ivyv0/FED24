@@ -160,3 +160,13 @@ nav ul li a {
 /**********************/
 /* MEDIA QUERY (GROTE SCHERMEN) */
 /**********************/
+
+@media (prefers-color-scheme: dark) {
+    header img:last-of-type {
+        opacity: 0.5;
+    }
+    .button {
+        background-color: white;
+        color: black;
+    }
+}
