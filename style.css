@@ -48,7 +48,6 @@ body {
 
 header {
     display: flex;
-    justify-content: end;
 
 }
 
@@ -56,7 +55,6 @@ header {
 /**********************/
 /* NAVIGATION STYLES */
 /**********************/
-@media screen and (min-width: 969px) {
 nav {
     position: relative;
 }
@@ -70,64 +68,37 @@ nav .menu-toggle {
 }
 
 nav .menu-toggle img {
-   width: 8.5%;
-   z-index: 1000000;
-   position: absolute;
+   width: 4.6em;
 } 
-nav > img {
-    width: 100%;
-    z-index: 1000001;
-    position: absolute;
+
+nav img {
+    width: 4em;
+    padding-left: 2em;
 }
+
 /**********************/
 /* SLIDE MENU STYLES */
 /**********************/
-nav ul li h2 {
-    visibility: hidden;
-   
-}
-
-nav ul li a {
-    visibility: hidden;
-} 
-
-nav ul li:nth-of-type(1) h2::after {
-    visibility: visible;
-    content: "Solution";
-    font-family: "Ivy";
-}
-
-nav ul li:nth-of-type(2) h2::after {
-    visibility: visible;
-    content: "About us";
-}
-
-nav ul li:nth-of-type(3) h2::after {
-    visibility: visible;
-    content: "Contact";
-}
-
-nav ul li:nth-of-type(1) h2::after:hover {
-   text-decoration: underline;
-}
-
-nav ul li:nth-of-type(2) h2::after {
-    visibility: visible;
-    content: "About us";
-}
-
-nav ul li:nth-of-type(3) h2::after {
-    visibility: visible;
-    content: "Contact";
-}
-
 nav ul {
-    position: relative; /* Laat de ul zich positioneren binnen nav */
-    display: flex; /* Gebruik flexbox voor de items */
-    z-index: 1000; /* Zorg dat de ul boven andere elementen staat */
-    justify-content: flex-end; /* Plaatst de lijst naar rechts */
-    margin: 0; /* Verwijder standaard marges */
-    padding: 0; /* Verwijder standaard padding */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh; 
+    background: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 3em;
+    z-index: 1000; 
+    font-family: "Ivy";
 }    
 
 /* Menu zichtbaar maken */
@@ -141,7 +112,50 @@ nav.toonMenu button img {
    
 }
 
+/* List Items */
+nav ul li {
+    list-style: none;
+}
 
+nav ul li a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+
+/**********************/
+/* MEDIA QUERY (GROTE SCHERMEN) */
+/**********************/
+@media (min-width: 768px) {
+    nav ul {
+        position: static;
+        transform: none;
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    nav ul li span {
+        display: none;
+    }
+
+    nav .auth-buttons {
+        margin-top: 0;
+    }
 }
 /**********************/
 /* MEDIA QUERY (GROTE SCHERMEN) */
