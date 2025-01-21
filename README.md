@@ -237,19 +237,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/schyer.png" width="375px" alt="uitomst opdracht 1">
+   <img src="readme-images/aboutushyer-sc.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+    
+    In het begin gebruikte ik CSS Grid zonder goed te begrijpen wanneer het echt nuttig was. Soms gebruikte ik Grid voor simpele layouts waar `flexbox` efficiënter zou zijn geweest. Ik heb geleerd om Grid te gebruiken wanneer ik complexe, meerlagige layouts nodig heb, zoals meerdere kolommen en rijen (zoals in mijn voorbeeld met 2 kolommen en 4 tekstblokken). Voor eenvoudige alignments of een enkele rij gebruik ik nu vaker `flexbox`.
+    
+
+- **Lettertypes op een live website:**
+    
+    Mijn lettertypes werden niet geladen toen ik mijn website hostte op GitHub Pages, omdat ik een verkeerde padstructuur had gebruikt voor mijn fonts. Ik heb geleerd om ervoor te zorgen dat mijn lokale bestanden correct worden gehost en gelinkt. Bij hosting op GitHub Pages moet je letten op het pad naar je bestanden. Absolute paden (`/`) werken soms niet goed; het is beter om relative paden (`./`) te gebruiken.
+    
+- **Responsiviteit verbeteren:** Mijn eerste designs zagen er goed uit op desktop, en kleine schermen. Ik heb geleerd om `@media` queries in CSS te gebruiken om mijn layout aan te passen voor verschillende schermformaten. Ik test nu mijn designs op verschillende schermgroottes (desktop, tablet, mobiel).
+
+        Een responsive design is essentieel. Ik gebruik nu tools zoals Chrome DevTools om te testen hoe mijn website eruitziet op verschillende apparaten en bouw mijn layout "mobile-first".
+  <img src="readme-images/schyer.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - **Dark/Light Mode:**
+    - **Probleem:** Mijn dark/light mode werkte niet goed omdat ik een kleine typfout had gemaakt (zoals een spatie extra in mijn CSS variabelen).  Debuggen van kleine foutjes kan frustrerend zijn, maar het leert me mijn code beter organiseren en nauwkeuriger werken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/aboutushyer-sc.png" width="375px" alt="bummer">
 </details>
 
 
@@ -265,8 +277,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+<!-- /bronvermelding:
+ scroll driven: https://scroll-driven-animations.style/
+ nav bar: https://codepen.io/ivyv0/pen/YzmodBo
+ fonts: https://www.onlinewebfonts.com/download/04e6981992c0e2e7642af2074ebe3901
+ fade in: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
+ slide: https://stackoverflow.com/questions/60235253/how-to-get-a-list-of-google-slide-title-and-slide-number-google-apps-script
+  -->
 
 </details>
