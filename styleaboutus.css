@@ -1,33 +1,10 @@
-@font-face {
-    font-family: 'Ivy'; 
-    src: url("../fonts/Helvetica\ Now\ Display.woff2") format("woff2");
-    font-weight: 400; 
-}
-
-@font-face {
-    font-family: 'IvyBold';
-    src: url("../fonts/Helvetica\ Now\ Display\ Bold.woff2") format("woff2");
-    font-weight: 700;
-}
-
-:root {
-        color-scheme: light-dark;
-    --color-tekst: black; 
-    --color-background: light-dark (#8AADB2, white); 
-    --line-color: light-dark (darkgrey, black);
-    --line-color: light-dark (rgba(0, 0, 0, 0.2), white);
-    --color-vak:  #151623; 
-    --color-text-vak: white; 
-}
-
 
 body {
     font-family: 'Ivy';
-    color: var( --color-teskt);
+    color: var( --color-text);
     margin: 0; 
     background-color: #8AADB2;
 }
-
 
 header h1 img {
     position: absolute;
@@ -36,6 +13,7 @@ header h1 img {
     width: 2.2em;
     height: 2.2em;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -47,6 +25,7 @@ header {
 /**********************/
 nav {
     position: relative;
+    left: 10em;
 }
 
 /* Hamburger Button */
@@ -58,7 +37,7 @@ nav .menu-toggle {
 }
 
 nav .menu-toggle img {
-   width: 4.6em;
+   width: 5em;
 } 
 
 nav img {
@@ -186,6 +165,13 @@ footer section:nth-of-type(2) ul {
 footer section:nth-of-type(2) ul img {
     width: 40%;
     height: 90%;
+}
+
+@media (min-width:1020px) {
+    footer section:nth-of-type(2) ul img {
+        width: 20%;
+        height: 90%;
+    } 
 }
 
 footer section:nth-of-type(3) article {

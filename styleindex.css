@@ -5,8 +5,11 @@ body {
 }
 
 
-/* laptop scherm */
-@media screen and (min-width: 969px) {
+/* GROTE SCHERMEN */
+
+
+@media (min-width: 1020px) {
+    
     
 header img:last-of-type { 
     position: absolute;
@@ -17,6 +20,14 @@ header img:last-of-type {
     top: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+    header img:last-of-type {
+        filter: brightness(0.9); 
+    }
+    main section:nth-of-type(6) {
+        filter: brightness(0.9); 
+    }
+}
 
 
 header {
@@ -47,19 +58,6 @@ main section:first-of-type article:nth-of-type(1)  a img {
 main section:first-of-type article:nth-of-type(1)  a {
    width: 90%;
    position: relative;
-   
-   
-  
-}
-
-main section:nth-of-type(1) {
-    margin: 0;
-    padding: 0;
-}
-
-main section:nth-of-type(1) article:nth-of-type(1)  {
-   display: flex;
-  
 }
 
 main section:nth-of-type(1) article:nth-of-type(1) h2 {
@@ -71,14 +69,50 @@ main section:nth-of-type(1) article:nth-of-type(1) h2 {
     line-height: 0.9;
 }
 
+@media (min-width: 1021px) {
+    main section:nth-of-type(1) article:nth-of-type(1) h2 {
+        margin: 3em;
+        font-size: 3.8em;
+        font-family: "IvyBold";
+        margin-top: 0.8em;
+        order: 1;
+        line-height: 0.9;
+    }
+
+}
+main section:nth-of-type(1) {
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1)  {
+   display: flex;
+  
+}
+
 main section:nth-of-type(1) article:nth-of-type(2) h3 {
     font-size: 1.3rem;
     color: var(--color-text);
     margin-left: 1.5em;  
     font-family: "IvyBold";
+    
+    
 }
 
+@media (min-width: 1021px) {
+    main section:nth-of-type(1) article:nth-of-type(2) h3 {
+        font-size: 1.3rem;
+        color: var(--color-text);
+        margin-left: 3em;  
+        font-family: "IvyBold";
+        top: 4.8em;
+        position: relative;
+        border-bottom: solid 1.2px grey; 
+        padding-bottom: 5em;
+    }
+    
 
+}
 
 
 .button {
@@ -97,23 +131,31 @@ main section:nth-of-type(1) article:nth-of-type(2) h3 {
 
 #booking-options {
     margin: 1.7em;
+   
 }
+
+@media (min-width: 1021px) {
+    main > section:nth-of-type(1) article:nth-of-type(3) {
+        left: 55em;
+        position: relative;
+        bottom: 5em;
+    }
+
+   
+
+}
+
+
 
 main .button:hover {
     background-color: #1a242e;
 }
 
 
+
 main section:nth-of-type(2) li:nth-of-type(1) {
-    border-top: solid 1.1px black; 
+    border-top: solid 1.1px grey; 
 }
-
-
-main section:nth-of-type(6) ul img {
- width: 100%;
- height: 100%;
-}
-
 
 
 main section:nth-of-type(2) h2{
@@ -122,26 +164,62 @@ main section:nth-of-type(2) h2{
     margin-left: 1.2em;  
     margin-right: 1.2em;  
     font-family: "IvyBold";
-    border-top: solid 1.2px darkgrey; 
     line-height: 1em;
     padding-top: 1em;
     padding-bottom: 2.2em;
+}
+
+
+@media (min-width: 1020px) {
+
+main section:nth-of-type(2) ul {
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* Vier blokken in twee kolommen */
+   gap: 30px;
+   margin-left: 30em;
+   position: relative;
+   bottom: 3em;
+  
+}
+
+main section:nth-of-type(2) ul li{
+   font-size: 2em;
+    width: 60%;
+ }
+
+
+
+main section:nth-of-type(2) h2{
+    font-size: 4rem;
+    color: var(--color-text);    
+    font-family: "IvyBold";
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 2.2em;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Linkse sectie 2x zo breed als de rechter */
+    gap: 20px; /* Afstand tussen secties */
+    position: relative;
+    left: 7.2em;
+    width: 80%;
+}
+
 }
 
 main section:nth-of-type(2) li h3 {
     font-family: "IvyBold";
     font-size: 1.3rem;
 }
+
 main section:nth-of-type(2) li p {
     font-family: "Ivy";
     font-size: 1.1rem;
-    color: #666;
+    color: var(--line-color);
     line-height: 110%;
-   
 }
 
 main section:nth-of-type(2) li {
-    border-top: solid 1.1px black; 
+    border-top: solid 1.1px grey; 
     margin-right: 1.2em;
 }
 
@@ -149,16 +227,14 @@ li {
     list-style-type: none;
 }
 
-/* All solutions */
+/* Flex Service */
 main section:nth-of-type(3) {
     background-color: var(--color-vak);
     color: var(--color-text-vak);
     
 }
 
-
-
-main > section:nth-of-type(3) h4 {
+main > section:nth-of-type(3) article:first-of-type h4 {
     font-size: 2em;
     padding: 0.9em;
     display: flex;
@@ -166,7 +242,7 @@ main > section:nth-of-type(3) h4 {
     line-height: 0.8; 
 }
 
-main > section:nth-of-type(3) p {
+main > section:nth-of-type(3) article:first-of-type p {
     font-size: 1.1em;
     padding-left: 1.6em;
     font-family: "Ivy";
@@ -175,7 +251,7 @@ main > section:nth-of-type(3) p {
 }
 
 
-main > section:nth-of-type(3) > button{
+main > section:nth-of-type(3) article:first-of-type button{
     margin: 2em;
     text-decoration: none;
     padding: 8px 23px;
@@ -188,7 +264,8 @@ main > section:nth-of-type(3) > button{
     border-color: white;
 
 }
-main section:nth-of-type(3) article {
+
+main section:nth-of-type(3) article:nth-of-type(2) {
     width: 100%;
     position: relative;
     display: flex;
@@ -198,17 +275,17 @@ main section:nth-of-type(3) article {
    
 }
 
-main section:nth-of-type(3) article > h5 {
+main section:nth-of-type(3) article:nth-of-type(2) h5 {
     font-size: 2em;
     padding: 1em ;
     font-family: "IvyBold";
     position: relative; 
-    z-index: 1; 
+    z-index: 2; 
     top: 2em;
     
 }
 
-main section:nth-of-type(3) article:first-of-type p {
+main section:nth-of-type(3) article:nth-of-type(2) p {
     font-size: 1.1em;
     padding-left: 2em;
     font-family: "Ivy";
@@ -217,29 +294,72 @@ main section:nth-of-type(3) article:first-of-type p {
     margin-top: 0;
 }
 
-main section:nth-of-type(3) article:first-of-type img {
+main section:nth-of-type(3) article:nth-of-type(2) img {
     width: 100%; 
     height: auto; 
     position: absolute; 
     z-index: 0;
 }
 
-main section:nth-of-type(3) article:last-of-type img {
+main section:nth-of-type(3) article:nth-of-type(3) img {
     width: 100%; 
     height: auto; 
-    top: 2em;
-    position: absolute; 
+    
+
+    position: relative; 
     z-index: 0;
 }
 
-main section:nth-of-type(3) article:last-of-type p {
+
+
+main section:nth-of-type(3) article:nth-of-type(3) p {
     font-size: 1.1em;
     padding-left: 2em;
     font-family: "Ivy";
-    z-index: 1; 
-    line-height: 1.5;
-    margin-top: 0;
+    z-index: 9999; 
+    position: relative;
+    top: 14em;
+
+}   
+ 
+
+main section:nth-of-type(3) article:nth-of-type(3) h5 {
+    font-size: 2em;
+    padding: 1em ;
+    font-family: "IvyBold";
+    position: relative; 
+    z-index: 2; 
+    top: 10em;
+    
 }
+
+@media (min-width: 1021px) {
+    main > section:nth-of-type(3) article:first-of-type {
+      padding: 4em;
+      z-index: 9999;
+    }
+
+    main > section:nth-of-type(3) article:first-of-type p {
+        margin-top: 4em;
+    }
+
+    main > section:nth-of-type(3) article:nth-of-type(3) > img{
+        width: 100%;
+        height: 500px;
+        margin-top: 5em;
+
+    }
+
+    main > section:nth-of-type(3) article:nth-of-type(2) > img{
+       width: 70%;
+        height: 70vh;
+        transform: scale(1.9);
+        margin-top: 15em;
+        
+
+    }
+}
+
 
 /* flight manager */
 
@@ -252,7 +372,6 @@ main > section:nth-of-type(4) img {
     margin-top: 9em;
 }
  
-
 main > section:nth-of-type(4) h2{
     margin: 0.9em;
     font-family: "IvyBold";
@@ -274,6 +393,44 @@ main > section:nth-of-type(4) {
     flex-direction: column;
 }
 
+  @media (min-width: 1021px) {
+    .row {
+        flex-direction: column;
+        display: flex;
+        margin-left: 10em;
+        line-height: 10em;
+     
+       
+    }
+
+    main > section:nth-of-type(4) {
+        display: grid; 
+        grid-template-columns: 1fr 2fr;    
+        padding: 11em;  
+    }
+
+    main > section:nth-of-type(4) img {
+        width: 100%; 
+        height: 90%;
+        transform: scale(2);
+        margin-left: 1em;
+        margin-top: 1em;
+        top: 2em;
+      
+    }
+
+    main > section:nth-of-type(4) p  {
+      font-size: 1.2em;
+    }
+
+    main > section:nth-of-type(4) h2 {
+        font-size: 3em;
+    }
+
+
+
+    } 
+
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -282,7 +439,7 @@ main > section:nth-of-type(4) {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-    }
+}
 
 main > section:nth-of-type(5) li > img {
  width: 100%;
@@ -293,6 +450,28 @@ main > section:nth-of-type(5) li > img {
 main > section:nth-of-type(6) > img{
  width: 100%;
   
+}
+
+@media (max-width: 1020px) {
+    main > section:nth-of-type(6) > img{
+        width: 100%;
+        transform: scale(1.5);
+        z-index: -1000;
+       }
+
+       main > section:nth-of-type(6) > a {
+  
+        font-family: "IvyBold";
+        color: var(--color-text);
+        text-decoration: none;
+        font-size: 7.5em;
+        position: absolute;
+        /* inset: 0;  */
+        top: 3em;
+      
+    }
+
+    
 }
 
 main > section:nth-of-type(6) {
@@ -312,11 +491,46 @@ main > section:nth-of-type(6) > a {
     font-size: 3em;
     position: absolute;
     /* inset: 0;  */
-    top: 0;
     bottom: 0;
-    
-   
-   
+}
+
+main > section:nth-of-type(6) > h3 {
+    visibility: hidden;
+}
+
+main section:nth-of-type(6) ul img {
+    width: 100%;
+    height: 100%;
+   }
+
+
+@media (min-width: 1020px) {
+
+    main > section:nth-of-type(6) > a {
+  
+        font-family: "IvyBold";
+        color: black;
+        text-decoration: none;
+        font-size: 7.5em;
+        position: absolute;
+        /* inset: 0;  */
+        top: 1.5em;
+        bottom: 0;
+    }
+
+    main > section:nth-of-type(6) > h3 {
+        visibility: visible;
+        font-family: "Ivy";
+        color: grey;
+        text-decoration: none;
+        font-size: 1.5em;
+        position: absolute;
+        /* inset: 0;  */
+        top: 5.2em;
+        bottom: 0;
+        
+        
+    } 
 }
 
 main > section:nth-of-type(6) > a:hover {
@@ -348,6 +562,7 @@ footer section:nth-of-type(1) h2 > img {
   padding-top: 1rem;
 }
 
+
 footer section:nth-of-type(2) h3, h4 {
     width: 8em;
     padding-top: 1rem;
@@ -363,6 +578,12 @@ footer section:nth-of-type(2) ul {
 footer section:nth-of-type(2) ul img {
     width: 40%;
     height: 90%;
+}
+@media (min-width: 1020px) {
+    footer section:nth-of-type(2) ul img {
+        width: 16%;
+        height: 90%;
+    }
 }
 
 footer section:nth-of-type(3) article {
@@ -493,422 +714,16 @@ main section:nth-of-type(5) > button {
 }
 
 
-#prev {
-    left: 10em;
-}
 
-#next {
-    right: 10em;
-}
 
-
-
-
-
-/* Responsive */
-
-
-@media (max-width: 969px) {
-
-.visually-hiddenlogo {
-    display: none;
-}
-
-header > img { 
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    z-index: -1;
-    left: 0;
-    z-index: -1; 
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-   
-}
-
-header h1 img {
-    position: absolute;
-    top: 0.2em;
-    left: 0.6em;
-    width: 2.2em;
-    height: 2.2em;
-}
-
-nav img {
-    width: 4em;
-    padding-left: 2em;
-}
-
-/* main */
-
-main section:nth-of-type(1) {
-    margin: 0;
-    padding: 0;
-    line-height: 0.8em;
-}
-
-main section:nth-of-type(1) h2 {
-    margin-left: .7em;
-    font-size: 2.9em;
-    font-family: "IvyBold";
-    margin-top: 1.3em;
-}
-
-main section:nth-of-type(1) p {
-    font-size: 1.3rem;
-    color: var(--color-text);
-    margin-left: 1.5em;  
-    font-family: "IvyBold";
-   
-}
-
-
-.button {
-    margin: 10px;
-    text-decoration: none;
-    padding: 9px 23px;
-    background-color: #000000;
-    color: white;
-    border-radius: 30px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
-    font-family: "IvyBold";
-}
-
-#booking-options {
-    margin: 1.7em;
-}
-
-main .button:hover {
-    background-color: #1a242e;
-}
-
-
-main section:nth-of-type(2) li:nth-of-type(1) {
-    border-top: solid 1.1px black; 
-}
-
-
-main section:nth-of-type(6) ul img {
- width: 100%;
- height: 100%;
-}
-
-
-
-main section:nth-of-type(2) h2{
-    font-size: 1.8rem;
-    color: var(--color-text);
-    margin-left: 1.2em;  
-    margin-right: 1.2em;  
-    font-family: "IvyBold";
-    border-top: solid 1.2px darkgrey; 
-    line-height: 1em;
-    padding-top: 1em;
-    padding-bottom: 2.2em;
-}
-
-main section:nth-of-type(2) li h3 {
-    font-family: "IvyBold";
-    font-size: 1.3rem;
-}
-main section:nth-of-type(2) li p {
-    font-family: "Ivy";
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 110%;
-   
-}
-
-main section:nth-of-type(2) li {
-    border-top: solid 1.1px black; 
-    margin-right: 1.2em;
-}
-
-li {
-    list-style-type: none;
-}
-
-/* All solutions */
-main section:nth-of-type(3) {
-    background-color: var(--color-vak);
-    color: var(--color-text-vak);
-    
-}
-
-
-
-main > section:nth-of-type(3) h4 {
-    font-size: 2em;
-    padding: 0.9em;
-    display: flex;
-    margin-bottom: 1rem; 
-    line-height: 0.8; 
-}
-
-main > section:nth-of-type(3) p {
-    font-size: 1.1em;
-    padding-left: 1.6em;
-    font-family: "Ivy";
-    margin-top: 0;     
-    line-height: 0.8; 
-}
-
-
-main > section:nth-of-type(3) > button{
-    margin: 2em;
-    text-decoration: none;
-    padding: 8px 23px;
-    background-color: var(--color-vak);
-    color: white;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-family: "Ivy";
-    border-color: white;
-
-}
-main section:nth-of-type(3) article {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    line-height: 0.9em;
-   
-}
-
-main section:nth-of-type(3) article > h5 {
-    font-size: 2em;
-    padding: 1em ;
-    font-family: "IvyBold";
-    position: relative; 
-    z-index: 1; 
-    top: 2em;
-    
-}
-
-main section:nth-of-type(3) article:first-of-type p {
-    font-size: 1.1em;
-    padding-left: 2em;
-    font-family: "Ivy";
-    z-index: 1; 
-    line-height: 1.5;
-    margin-top: 0;
-}
-
-main section:nth-of-type(3) article:first-of-type img {
-    width: 100%; 
-    height: auto; 
-    position: absolute; 
-    z-index: 0;
-}
-
-main section:nth-of-type(3) article:last-of-type img {
-    width: 100%; 
-    height: auto; 
-    top: 2em;
-    position: absolute; 
-    z-index: 0;
-}
-
-main section:nth-of-type(3) article:last-of-type p {
-    font-size: 1.1em;
-    padding-left: 2em;
-    font-family: "Ivy";
-    z-index: 1; 
-    line-height: 1.5;
-    margin-top: 0;
-}
-
-/* flight manager */
-
-main > section:nth-of-type(4) img {
-    width: 50%;
-    order: -1; 
-    height: 10%;
-    transform: scale(1);
-    margin-left: 10em;
-    margin-top: 9em;
-}
- 
-
-main > section:nth-of-type(4) h2{
-    margin: 0.9em;
-    font-family: "IvyBold";
-    font-size: 2em;
-}
-
-main > section:nth-of-type(4) p{
-    margin: 1.3em;
-    font-family: "Ivy";
-    font-size: 1.2em;
-    line-height: 1.2em;
-}
-
-
-main > section:nth-of-type(4) {
-    background-color: var(--color-vak);
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    }
-
-main > section:nth-of-type(5) li > img {
- width: 100%;
- 
-}  
-
-/* foto cloud */
-main > section:nth-of-type(6) > img{
- width: 100%;
-  
-}
-
-main > section:nth-of-type(6) {
-    position: relative;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-   
-} 
-
-main > section:nth-of-type(6) > a {
-  
-    font-family: "IvyBold";
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 3em;
-    position: absolute;
-    /* inset: 0;  */
-    top: 0;
-    bottom: 0;
-    
-   
-   
-}
-
-main > section:nth-of-type(6) > a:hover {
-    text-decoration: underline;
-    transition: 1s;
-
-}
-
-
-/* footer */
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 1.5em;
-  
-}
-
-footer section:nth-of-type(3) {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr); 
-   gap:1em; 
-   flex-wrap: wrap;
-    
-}
-
-footer section:nth-of-type(1) h2 > img {
-  width: 8em;
-  padding-top: 1rem;
-}
-
-footer section:nth-of-type(2) h3, h4 {
-    width: 8em;
-    padding-top: 1rem;
-    font-family: "IvyBold";
-}
-  
-footer section:nth-of-type(2) ul {
-    display: flex;
-    gap: 1rem;
-    
-}
-
-footer section:nth-of-type(2) ul img {
-    width: 40%;
-    height: 90%;
-}
-
-footer section:nth-of-type(3) article {
-    margin-bottom: 1rem;
-    font-size: 1.5em;
-    
-}
-
-footer section:nth-of-type(4) h5:first-of-type {
-    font-size: 1rem;
-    font-family: "Ivy";
-}
-
-footer section:nth-of-type(4) h5:last-of-type {
-    font-size: 0.8rem;
-    font-family: "Ivy";
-    order: -1;
-    color: grey;
-}
-
-footer section:nth-of-type(4) p {
-    font-size: 0.8rem;
-    font-family: "Ivy";
-    order: -1;
-    color: grey;
-}
-
-footer ul {
-    display: column;
-    gap: 1rem;
-    text-decoration: none;
-    padding: 0;
-    margin: 0; 
-    order: 1;
-    list-style: none;
-    font-size: 0.7em;
-}
-
-
-footer section:nth-of-type(4) ul{
-    font-size: 1.2em;
-    line-height: 2em;
-}
-
-footer img {
-    width: 5em;
-    
-}
-
- 
-footer li a {
-    text-decoration: none;
-    cursor: default;
-    color: grey;
-}
+/* ACHTERGROND INDEX */
 
 /**********************/
 /* BASIS STYLES */
 /**********************/
 /*  scroll animatie */
+
+@media (max-width: 1020px) {
 @keyframes adjust-image {
     from {
         zoom: 1;
@@ -939,6 +754,12 @@ opacity: 0.10: Maakt het bijna transparant (10% zichtbaarheid). */
 
 header > img { 
     view-timeline: --header-vtl;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   
 }
 header > img {
     position: fixed;
@@ -954,49 +775,19 @@ header h1 {
     padding-top: min(20rem, 60vw);
 }
 
-
-
-/* foto slide */
-main section:nth-of-type(5) {
-    overflow: hidden; /* Verberg inhoud buiten het zichtbare deel */
-    width: 100%;
-}
-
-main section:nth-of-type(5) ul {
-    display: flex; /* Zet de slides naast elkaar */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    transition: transform 0.5s ease; /* Smooth overgang bij sliden */
-}
-
-main section:nth-of-type(5) li {
-    min-width: 100%; /* Elke slide neemt 100% van de breedte in */
-}
-
-main section:nth-of-type(5) li img {
-    width: 100%;
-    height: auto;
-}
-
-main section:nth-of-type(5) > button {
-    top: 50%;
-    transform: translateX(1500%);
-    color: black;
-    border: none;
-    cursor: pointer;
-    padding: 0.9em;
-    z-index: 10000;
-    background: none;
+header h1 img {
+    position: absolute;
+    top: 0.2em;
+    left: 0.6em;
+    width: 2.2em;
+    height: 2.2em;
 }
 
 
-#prev {
-    left: 10em;
-}
-
-#next {
-    right: 10em;
-}
 
 }
+
+
+
+
+
