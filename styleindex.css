@@ -63,7 +63,7 @@ main section:first-of-type article:nth-of-type(1)  a {
 main section:nth-of-type(1) article:nth-of-type(1) h2 {
     margin-left: .7em;
     font-size: 3em;
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     margin-top: 2em;
     order: 1;
     line-height: 0.9;
@@ -73,7 +73,7 @@ main section:nth-of-type(1) article:nth-of-type(1) h2 {
     main section:nth-of-type(1) article:nth-of-type(1) h2 {
         margin: 3em;
         font-size: 3.8em;
-        font-family: "IvyBold";
+        font-family: "IvyBold", sans-serif;
         margin-top: 0.8em;
         order: 1;
         line-height: 0.9;
@@ -94,7 +94,7 @@ main section:nth-of-type(1) article:nth-of-type(2) h3 {
     font-size: 1.3rem;
     color: var(--color-text);
     margin-left: 1.5em;  
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     
     
 }
@@ -104,7 +104,7 @@ main section:nth-of-type(1) article:nth-of-type(2) h3 {
         font-size: 1.3rem;
         color: var(--color-text);
         margin-left: 3em;  
-        font-family: "IvyBold";
+        font-family: "IvyBold", sans-serif;
         top: 4.8em;
         position: relative;
         border-bottom: solid 1.2px grey; 
@@ -126,7 +126,7 @@ main section:nth-of-type(1) article:nth-of-type(2) h3 {
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
 }
 
 #booking-options {
@@ -163,7 +163,7 @@ main section:nth-of-type(2) h2{
     color: var(--color-text);
     margin-left: 1.2em;  
     margin-right: 1.2em;  
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     line-height: 1em;
     padding-top: 1em;
     padding-bottom: 2.2em;
@@ -192,7 +192,7 @@ main section:nth-of-type(2) ul li{
 main section:nth-of-type(2) h2{
     font-size: 4rem;
     color: var(--color-text);    
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     line-height: 1em;
     padding-top: 1em;
     padding-bottom: 2.2em;
@@ -207,12 +207,12 @@ main section:nth-of-type(2) h2{
 }
 
 main section:nth-of-type(2) li h3 {
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     font-size: 1.3rem;
 }
 
 main section:nth-of-type(2) li p {
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     font-size: 1.1rem;
     color: var(--line-color);
     line-height: 110%;
@@ -245,7 +245,7 @@ main > section:nth-of-type(3) article:first-of-type h4 {
 main > section:nth-of-type(3) article:first-of-type p {
     font-size: 1.1em;
     padding-left: 1.6em;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     margin-top: 0;     
     line-height: 0.8; 
 }
@@ -278,7 +278,7 @@ main section:nth-of-type(3) article:nth-of-type(2) {
 main section:nth-of-type(3) article:nth-of-type(2) h5 {
     font-size: 2em;
     padding: 1em ;
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     position: relative; 
     z-index: 2; 
     top: 2em;
@@ -288,7 +288,7 @@ main section:nth-of-type(3) article:nth-of-type(2) h5 {
 main section:nth-of-type(3) article:nth-of-type(2) p {
     font-size: 1.1em;
     padding-left: 2em;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     z-index: 1; 
     line-height: 1.5;
     margin-top: 0;
@@ -315,7 +315,7 @@ main section:nth-of-type(3) article:nth-of-type(3) img {
 main section:nth-of-type(3) article:nth-of-type(3) p {
     font-size: 1.1em;
     padding-left: 2em;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     z-index: 9999; 
     position: relative;
     top: 14em;
@@ -326,7 +326,7 @@ main section:nth-of-type(3) article:nth-of-type(3) p {
 main section:nth-of-type(3) article:nth-of-type(3) h5 {
     font-size: 2em;
     padding: 1em ;
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     position: relative; 
     z-index: 2; 
     top: 10em;
@@ -374,13 +374,13 @@ main > section:nth-of-type(4) img {
  
 main > section:nth-of-type(4) h2{
     margin: 0.9em;
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     font-size: 2em;
 }
 
 main > section:nth-of-type(4) p{
     margin: 1.3em;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     font-size: 1.2em;
     line-height: 1.2em;
 }
@@ -461,7 +461,7 @@ main > section:nth-of-type(6) > img{
 
        main > section:nth-of-type(6) > a {
   
-        font-family: "IvyBold";
+        font-family: "IvyBold", sans-serif;
         color: var(--color-text);
         text-decoration: none;
         font-size: 7.5em;
@@ -485,7 +485,7 @@ main > section:nth-of-type(6) {
 
 main > section:nth-of-type(6) > a {
   
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
     color: var(--color-text);
     text-decoration: none;
     font-size: 3em;
@@ -508,7 +508,7 @@ main section:nth-of-type(6) ul img {
 
     main > section:nth-of-type(6) > a {
   
-        font-family: "IvyBold";
+        font-family: "IvyBold", sans-serif;
         color: black;
         text-decoration: none;
         font-size: 7.5em;
@@ -520,7 +520,7 @@ main section:nth-of-type(6) ul img {
 
     main > section:nth-of-type(6) > h3 {
         visibility: visible;
-        font-family: "Ivy";
+        font-family: "Ivy", sans-serif;
         color: grey;
         text-decoration: none;
         font-size: 1.5em;
@@ -566,7 +566,7 @@ footer section:nth-of-type(1) h2 > img {
 footer section:nth-of-type(2) h3, h4 {
     width: 8em;
     padding-top: 1rem;
-    font-family: "IvyBold";
+    font-family: "IvyBold", sans-serif;
 }
   
 footer section:nth-of-type(2) ul {
@@ -594,19 +594,19 @@ footer section:nth-of-type(3) article {
 
 footer section:nth-of-type(4) h5:first-of-type {
     font-size: 1rem;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
 }
 
 footer section:nth-of-type(4) h5:last-of-type {
     font-size: 0.8rem;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     order: -1;
     color: grey;
 }
 
 footer section:nth-of-type(4) p {
     font-size: 0.8rem;
-    font-family: "Ivy";
+    font-family: "Ivy", sans-serif;
     order: -1;
     color: grey;
 }
