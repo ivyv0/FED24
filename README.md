@@ -206,26 +206,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  
+  font face werkte eerst niet op github, animatie op de achtergrond beweegt past nadat de header is voorbij. @media vond ik nog lastig ik wist niet wanner ik min-width en max width moet gebruiken. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Ivy (ik had alleen met Sanne Voortgang gesprek 3)     
+  | Ik wist hoe fontface kan aanspreken in mijn css en vanuit de font folder, ik wist @media werkt en grid|
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - grid voor verschillende tekstblokken en kolomen 
+  - fontface
+  - @media
+  -
 
 </details>
 
